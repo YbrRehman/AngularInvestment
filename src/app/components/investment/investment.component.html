@@ -1,0 +1,12 @@
+<div>
+
+    <ol [ngStyle]="{'list-style-type':'none'}">
+       <li *ngFor="let investment of investments">
+        <h3>Name: {{investment.planName}}<br>
+             Type: {{investment.type}}<br>
+             <button (click)="show(investment.planId)">Show Details</button>
+            </h3>
+       </li>
+
+    </ol>
+</div>

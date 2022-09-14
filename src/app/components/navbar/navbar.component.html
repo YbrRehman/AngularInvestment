@@ -1,0 +1,11 @@
+<h2>Investment Bazaar</h2>
+<ol>
+<li><a routerLink="/home">Home </a></li>
+<li><a routerLink="/investments"> Plans</a></li>
+<li *ngFor="let type of planTypes">
+  <a routerLink="/investments/{{type}}">{{type}}</a>
+</li>
+<li><a routerLink="/contact"> ContactUs</a></li>
+
+
+</ol>
